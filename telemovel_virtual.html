@@ -12,7 +12,6 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             user-select: none;
         }
-
         body {
             background: #121212;
             display: flex;
@@ -21,12 +20,12 @@
             height: 100vh;
             color: white;
         }
-
         /* Estrutura do Telemóvel */
         .phone {
             width: 360px;
             height: 740px;
-            background: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=500') no-repeat center center;
+            /* Fundo atualizado com a imagem em gradiente fornecida */
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEbElEQVR4nO2byXbjMAwEbf//pztp6vYkUhgUAFGZ03UvVpYIggCIdX39ff0LgU/689sbgM6wEAhCICAiEBAl9vX7L8gZFiLAsBAsBIKAuAn7/fsX9NoX/oZgIdYhYCEmCgKiwv787oP6S6f8NQsBYCE6GhaChbhh968E+23vDIsK668IsBAt/v9asI7u7w9YiNoRFiwEi0RAvMh6N773rGExwEIsFAvxs6wPhAsH6YV9Z776mB0N6+fFf/X+bIasfN9Z42eF/XN6Y+8P6f3ZDCELwULM9mBYvEwX9p35asYs99W6p/b6bIasfD97GkJgIVgI92bI6pXlO/Otmw0W9p316h4M6/X6bIasfD97GsJCXGwhXmS5m7w789W/m6H+wEIsbCHZ8/K8bO3Z63unIYpAQLidgOxd6HtnP83Y6/tnN/5shswI0ffPaojsFfbuRdaXrbw789W/ZzfkNwsx+f6shizFwKzIerf+6t+zEAt7SMbYFvI0gYAg7CHuD9k7e9G7vmeXv8bvew+GjVl7P1vIasx8mscYFwKihO9Y6mYv+n6zXvR9mCHkXvR97yGzYp3Xy54v/Nme+Z6vXs96vdY9mCHpIeX96vVat9ezYp3Xy54v/Nme+Z4vICD9338fCisv8uXv2p15v/Xb9Yp9uX7N68H9mP8Wsk9AsA8p5N3kP/O96Gv/0xAgv7N9p7Pvd9arIesvP8ZshryEAPmdPch6N776/VmvfWFhIay/IuxF1nt2P6T3R8Kiz28hq78vLMRshmwh6CEzYp3Xy9beH7P2ftYhf9b3O/v1bIbMCvN37b0h+p4CAtHie8E6un9/oEDAZ26v7wUL0WbIn8U+93wBAb8X7N7+94bFisZAsBA39p0FCEg9CgT8XmS9yHrR3xe+94Xv7w/Z0RAWYiEExIusdxb/F+TclY7/Ietdf98fshACskV/P/YICAtxfwLyrp75Y9a7Psh797OQ+78v1p/F/oWcZSFYCPZis7f6v0BeXuh7N0N6b8ie3b+6P6f3ZwsBYCEExIuqd+vX3v2Q6N/ff0HOrXv/BQX7kFms83rZ88W6r3Y2Q1a+76yx94e0M9+6sc7rZetP+38f9oWFmCnI3bM7O9uLfm6GrD5w1vhZYb96f/f2XzOEwEJMFATkT5bPrHfrv497X+T/p6W7Z3b593Hvy6xX989mCIGFYM8XUcj3w74/Wf5pLMTb8U9mCBZiogAh8fOen99f0D893b8fsBAIQiAggD0EBAJiXwICAgGxLyAEAgICAgEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEPgL89fFjZ7f7bIAAAAASUVORK5CYII=');
             background-size: cover;
             border: 12px solid #333;
             border-radius: 40px;
@@ -36,7 +35,6 @@
             display: flex;
             flex-direction: column;
         }
-
         /* Barra de Estado */
         .status-bar {
             height: 30px;
@@ -48,7 +46,6 @@
             font-size: 12px;
             z-index: 10;
         }
-
         /* Ecrã Principal / Grelha de Apps */
         .screen {
             flex: 1;
@@ -59,7 +56,6 @@
             gap: 20px;
             align-content: start;
         }
-
         /* Ícone de App */
         .app-icon {
             display: flex;
@@ -68,7 +64,6 @@
             cursor: pointer;
             text-align: center;
         }
-
         .app-icon .icon {
             width: 60px;
             height: 60px;
@@ -80,11 +75,9 @@
             box-shadow: 0 8px 15px rgba(0,0,0,0.3);
             transition: transform 0.2s;
         }
-
         .app-icon:active .icon {
             transform: scale(0.9);
         }
-
         .app-icon span {
             font-size: 11px;
             margin-top: 6px;
@@ -94,7 +87,6 @@
             text-overflow: ellipsis;
             width: 100%;
         }
-
         /* Cores dos Ícones */
         .bg-calc { background: #ff9f0a; }
         .bg-notes { background: #ffcc00; }
@@ -114,12 +106,10 @@
             flex-direction: column;
             animation: zoomIn 0.25s ease-out;
         }
-
         @keyframes zoomIn {
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
-
         .app-header {
             height: 44px;
             background: #2c2c2e;
@@ -129,7 +119,6 @@
             justify-content: space-between;
             border-bottom: 1px solid #3a3a3c;
         }
-
         .btn-back {
             background: none;
             border: none;
@@ -137,15 +126,12 @@
             font-size: 16px;
             cursor: pointer;
         }
-
         .app-content {
             flex: 1;
             padding: 15px;
             overflow-y: auto;
         }
-
         /* --- CÓDIGO DOS PROGRAMAS INTERNOS --- */
-        
         /* Calculadora */
         .calc-screen {
             width: 100%;
@@ -173,8 +159,9 @@
             color: white;
             cursor: pointer;
         }
-        .calc-grid button.op { background: #ff9f0a; }
-
+        .calc-grid button.op {
+            background: #ff9f0a;
+        }
         /* Bloco de Notas */
         #notes-area {
             width: 100%;
@@ -187,7 +174,6 @@
             resize: none;
             font-size: 16px;
         }
-
         /* Jogo Clicker */
         .game-container {
             text-align: center;
@@ -206,7 +192,6 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.3);
             margin-top: 20px;
         }
-
         /* Barra de Navegação Inferior (Botão Home) */
         .nav-bar {
             height: 40px;
@@ -216,7 +201,6 @@
             align-items: center;
             z-index: 30;
         }
-
         .home-button {
             width: 40px;
             height: 40px;
@@ -229,162 +213,48 @@
 </head>
 <body>
 
-    <div class="phone">
-        <!-- Barra de Estado -->
-        <div class="status-bar">
-            <span id="clock">12:00</span>
-            <span>📶 🔋 100%</span>
-        </div>
+<div class="phone">
+    <!-- Barra de Estado -->
+    <div class="status-bar">
+        <span id="clock">12:00</span>
+        <span>📶 🔋 100%</span>
+    </div>
 
-        <!-- Ecrã Principal com os Programas -->
-        <div class="screen">
-            <div class="app-icon" onclick="openApp('calc-app')">
-                <div class="icon bg-calc">🧮</div>
-                <span>Calculadora</span>
-            </div>
-            <div class="app-icon" onclick="openApp('notes-app')">
-                <div class="icon bg-notes">📝</div>
-                <span>Notas</span>
-            </div>
-            <div class="app-icon" onclick="openApp('game-app')">
-                <div class="icon bg-game">🎮</div>
-                <span>Clicker</span>
-            </div>
-            <div class="app-icon" onclick="openApp('browser-app')">
-                <div class="icon bg-browser">🌐</div>
-                <span>Navegador</span>
-            </div>
+    <!-- Ecrã Principal com os Programas -->
+    <div class="screen">
+        <div class="app-icon" onclick="openApp('calc-app')">
+            <div class="icon bg-calc">🧮</div>
+            <span>Calculadora</span>
         </div>
-
-        <!-- JANELA: Calculadora -->
-        <div id="calc-app" class="app-window">
-            <div class="app-header">
-                <button class="btn-back" onclick="closeApp()">✕</button>
-                <span>Calculadora</span>
-                <div style="width:20px;"></div>
-            </div>
-            <div class="app-content">
-                <input type="text" id="calc-display" class="calc-screen" readonly value="0">
-                <div class="calc-grid">
-                    <button onclick="clearCalc()">C</button>
-                    <button class="op" onclick="pressOp('/')">/</button>
-                    <button class="op" onclick="pressOp('*')">×</button>
-                    <button class="op" onclick="pressOp('-')">-</button>
-                    <button onclick="pressNum('7')">7</button>
-                    <button onclick="pressNum('8')">8</button>
-                    <button onclick="pressNum('9')">9</button>
-                    <button class="op" rowspan="2" onclick="pressOp('+')" style="grid-row: span 2; height: 100%;">+</button>
-                    <button onclick="pressNum('4')">4</button>
-                    <button onclick="pressNum('5')">5</button>
-                    <button onclick="pressNum('6')">6</button>
-                    <button onclick="pressNum('1')">1</button>
-                    <button onclick="pressNum('2')">2</button>
-                    <button onclick="pressNum('3')">3</button>
-                    <button onclick="calculate()" style="grid-column: span 2; background: #ff9f0a;">=</button>
-                    <button onclick="pressNum('0')">0</button>
-                    <button onclick="pressNum('.')">.</button>
-                </div>
-            </div>
+        <div class="app-icon" onclick="openApp('notes-app')">
+            <div class="icon bg-notes">📝</div>
+            <span>Notas</span>
         </div>
-
-        <!-- JANELA: Notas -->
-        <div id="notes-app" class="app-window">
-            <div class="app-header">
-                <button class="btn-back" onclick="closeApp()">✕</button>
-                <span>Bloco de Notas</span>
-                <div style="width:20px;"></div>
-            </div>
-            <div class="app-content">
-                <textarea id="notes-area" placeholder="Começa a escrever aqui..."></textarea>
-            </div>
+        <div class="app-icon" onclick="openApp('game-app')">
+            <div class="icon bg-game">🎮</div>
+            <span>Clicker</span>
         </div>
-
-        <!-- JANELA: Jogo Clicker -->
-        <div id="game-app" class="app-window">
-            <div class="app-header">
-                <button class="btn-back" onclick="closeApp()">✕</button>
-                <span>Clicker Game</span>
-                <div style="width:20px;"></div>
-            </div>
-            <div class="app-content game-container">
-                <h2>Pontos: <span id="score">0</span></h2>
-                <button class="click-btn" onclick="addPoint()">Clica-me!</button>
-            </div>
-        </div>
-
-        <!-- JANELA: Navegador Falso -->
-        <div id="browser-app" class="app-window">
-            <div class="app-header">
-                <button class="btn-back" onclick="closeApp()">✕</button>
-                <span>Navegador Web</span>
-                <div style="width:20px;"></div>
-            </div>
-            <div class="app-content" style="display:flex; flex-direction:column; gap:10px;">
-                <input type="text" value="https://www.google.pt" style="width:100%; padding:8px; border-radius:5px; border:none; background:#3a3a3c; color:white;" readonly>
-                <div style="flex:1; background:white; color:black; padding:20px; border-radius:8px; text-align:center;">
-                    <h3 style="margin-top:40px;">Google</h3>
-                    <p style="color:#666; font-size:14px; margin-top:10px;">Ligado à Internet Simulada</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Barra do Botão Home -->
-        <div class="nav-bar">
-            <div class="home-button" onclick="closeApp()"></div>
+        <div class="app-icon" onclick="openApp('browser-app')">
+            <div class="icon bg-browser">🌐</div>
+            <span>Navegador</span>
         </div>
     </div>
 
-    <script>
-        // Relógio Dinâmico
-        function updateClock() {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            document.getElementById('clock').innerText = hours + ':' + minutes;
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
-
-        // Sistema de Janelas (Abrir/Fechar Apps)
-        let activeApp = null;
-        function openApp(appId) {
-            if (activeApp) closeApp();
-            activeApp = document.getElementById(appId);
-            activeApp.style.display = 'flex';
-        }
-        function closeApp() {
-            if (activeApp) {
-                activeApp.style.display = 'none';
-                activeApp = null;
-            }
-        }
-
-        // Lógica da Calculadora
-        let calcDisplay = document.getElementById('calc-display');
-        function pressNum(num) {
-            if (calcDisplay.value === '0') calcDisplay.value = num;
-            else calcDisplay.value += num;
-        }
-        function pressOp(op) {
-            calcDisplay.value += op;
-        }
-        function clearCalc() {
-            calcDisplay.value = '0';
-        }
-        function calculate() {
-            try {
-                calcDisplay.value = eval(calcDisplay.value);
-            } catch {
-                calcDisplay.value = 'Erro';
-            }
-        }
-
-        // Lógica do Jogo Clicker
-        let score = 0;
-        function addPoint() {
-            score++;
-            document.getElementById('score').innerText = score;
-        }
-    </script>
-</body>
-</html>
+    <!-- JANELA: Calculadora -->
+    <div id="calc-app" class="app-window">
+        <div class="app-header">
+            <button class="btn-back" onclick="closeApp()">✕</button>
+            <span>Calculadora</span>
+            <div style="width:20px;"></div>
+        </div>
+        <div class="app-content">
+            <input type="text" id="calc-display" class="calc-screen" readonly value="0">
+            <div class="calc-grid">
+                <button onclick="clearCalc()">C</button>
+                <button class="op" onclick="pressOp('/')">/</button>
+                <button class="op" onclick="pressOp('*')">×</button>
+                <button class="op" onclick="pressOp('-')">-</button>
+                <button onclick="pressNum('7')">7</button>
+                <button onclick="pressNum('8')">8</button>
+                <button onclick="pressNum('9')">9</button>
+                <button class="op" rowspan="2" onclick="pressOp('+')" style="grid-row: span 2; height: 100%;">+</button>
